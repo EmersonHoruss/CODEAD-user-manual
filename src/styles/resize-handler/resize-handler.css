@@ -1,0 +1,36 @@
+/* rh: rezise-handler */
+:root {
+  --rh-bg-color-codead: rgba(25, 118, 210, 0.7);
+  --rh-width-start: 2px;
+  --rh-width-active: 4px;
+  --rh-height-start: var(--rh-width-start);
+  --rh-height-active: var(--rh-width-active);
+}
+.resize-handler-y-codead {
+  width: var(--rh-width-start);
+  background-color: var(--rh-bg-color-codead);
+  cursor: col-resize;
+  transition: width 0.2 ease;
+}
+.resize-handler-y-codead:hover {
+  width: var(--rh-width-active);
+}
+.resize-handler-active-y-codead {
+  width: var(--rh-width-active);
+  background-color: var(--rh-bg-color-codead);
+  cursor: col-resize;
+}
+.resize-handler-x-codead {
+  height: var(--rh-height-start);
+  background-color: var(--rh-bg-color-codead);
+  cursor: row-resize;
+  transition: height 0.2 ease;
+}
+.resize-handler-x-codead:hover {
+  height: var(--rh-height-active);
+}
+.resize-handler-active-x-codead {
+  height: var(--rh-height-active);
+  background-color: var(--rh-bg-color-codead);
+  cursor: row-resize;
+}

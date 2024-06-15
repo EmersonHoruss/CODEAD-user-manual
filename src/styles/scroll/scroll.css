@@ -1,0 +1,32 @@
+.scroll-codead::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+.scroll-codead::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    33,
+    130,
+    200,
+    0.2
+  ); /* Color del pulgar del scrollbar */
+  border-radius: 6px; /* Borde redondeado del pulgar del scrollbar */
+}
+
+.scroll-codead::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de la pista del scrollbar */
+}
+
+.scroll-codead-transparent::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+.scroll-codead-transparent::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del pulgar del scrollbar */
+  border-radius: 6px; /* Borde redondeado del pulgar del scrollbar */
+}
+
+.scroll-codead-transparent::-webkit-scrollbar-track {
+  background-color: transparent; /* Color de la pista del scrollbar */
+}
