@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import { IBodyHeight } from "../root/Root";
 import { idSideNav, idSideNavWrapper, optionsWithIcons } from "./constants";
@@ -20,6 +20,7 @@ export function SideNav({ height }: IBodyHeight) {
     resizeActiveHandlerY
   );
   const navigate = useNavigate();
+  const location = useLocation();
   const handleClick = (route: string) => {
     navigate(route);
   };
@@ -34,7 +35,13 @@ export function SideNav({ height }: IBodyHeight) {
         {Object.keys(optionsWithIcons).map((key) => {
           const option = optionsWithIcons[key];
           return (
-            <Button key={key} onClick={() => handleClick(option.path)}>
+            <Button
+              key={key}
+              onClick={() => handleClick(option.path)}
+              className={`${
+                location.pathname === `/${option.path}` ? "active" : ""
+              }`}
+            >
               <div className="w-full flex items-center gap-1 normal-case text-base pl-2">
                 {option.icon}
                 <span>{option.title}</span>
