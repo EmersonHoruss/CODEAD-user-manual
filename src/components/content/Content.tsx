@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { SideNav } from "../sidenav/SideNav";
 import { Outlet } from "react-router-dom";
 import { IBodyHeight } from "../root/Root";
-import { scroll } from "../../styles/scroll/scroll-contants";
 import { idSideNavWrapper } from "../sidenav/constants";
 
 export function Content({ height }: IBodyHeight) {
@@ -57,7 +56,7 @@ export function Content({ height }: IBodyHeight) {
     >
       <SideNav height={height} />
       <div style={{ height, maxHeight: height }} className="flex flex-col">
-        <div className={`grow h-full`} style={{ width: outletWidth }}>
+        <div className={`grow h-full w-full`} style={{ width: outletWidth }}>
           <Outlet />
         </div>
       </div>
