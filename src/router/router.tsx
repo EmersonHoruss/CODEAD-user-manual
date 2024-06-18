@@ -2,8 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Root } from "../components/root/Root";
 import { options } from "../components/sidenav/constants";
 import NotFound404 from "../pages/NotFound404";
-import GettingStarted from "../pages/GettingStarted";
-import Uses from "../pages/Uses";
+import Manual from "../pages/Manual";
 import Examples from "../pages/Examples";
 import Language from "../pages/Language";
 import SpecificationModule from "../pages/SpecificationModule";
@@ -20,15 +19,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: options.gettingStarted.path,
-        element: <GettingStarted />,
+        path: options.manual.path,
+        element: <Manual />,
       },
+
       {
-        path: `${options.gettingStarted.path}/${options.uses.path}`,
-        element: <Uses />,
-      },
-      {
-        path: `${options.gettingStarted.path}/${options.examples.path}`,
+        path: `${options.examples.path}`,
         element: <Examples />,
       },
       {
