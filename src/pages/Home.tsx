@@ -4,6 +4,7 @@ import HourglassEmptyOutlinedIcon from "@mui/icons-material/HourglassEmptyOutlin
 import AutoFixHighOutlinedIcon from "@mui/icons-material/AutoFixHighOutlined";
 import AccessibilityNewOutlinedIcon from "@mui/icons-material/AccessibilityNewOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
+import Image from "../components/image/Image";
 
 const Home = () => {
   return (
@@ -19,13 +20,7 @@ const Home = () => {
           backend en segundos en Spring Boot 3 con las funcionalidades básicas
           de creación, lectura, actualización y eliminación lógica y física.
         </p>
-        <div className="flex h-full justify-center">
-          <img
-            className="w-10/12 h-5/6"
-            src="src/assets/images/CODEAD.JPG"
-            alt="CODEAD presentación"
-          />
-        </div>
+        <Image src="src/assets/images/CODEAD.JPG" alt="CODEAD presentación" />
 
         <span className="text-3xl font-semibold text-blue-500 pt-10 pb-10">
           Por qué usar CODEAD
