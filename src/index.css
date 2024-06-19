@@ -13,3 +13,16 @@
 .active {
   background-color: rgb(180, 210, 240) !important;
 }
+
+table td,
+table th {
+  /* border: 1px solid blue; */
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(79, 79, 79, 0.3);
+}
+
+table td {
+  vertical-align: baseline;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
