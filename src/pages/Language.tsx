@@ -1,7 +1,6 @@
 import Paragraph from "../components/paragraph/Paragraph";
 import { optionsWithIcons } from "../components/sidenav/constants";
 import Title3 from "../components/title3/Title3";
-import Title4 from "../components/title3 copy/Title4";
 import PageTemplate from "./PageTemplate";
 import List from "../components/list/List";
 
@@ -9,12 +8,11 @@ const Language = () => {
   return (
     <PageTemplate option={optionsWithIcons.language}>
       <div className="w-full h-full flex flex-col">
-        {/*  */}
-        <Title3 title="CODEAD Language" />
+        <Title3 title="Acerca de CODEAD Language" />
         <Paragraph>
-          CODEAD Language es la gramática que usa el software CODEAD para
-          definir las entidades. Las entidades están basadas en columnas, cada
-          columna puede ser de dos tipos, campo y relación.
+          CODEAD Language es el lenguaje que usa el software CODEAD para definir
+          las entidades. Las entidades están basadas en columnas, cada columna
+          puede ser de dos tipos, campo y relación.
         </Paragraph>
         <Paragraph>
           La columna está conformado por tres secciones: las restricciones
@@ -25,7 +23,7 @@ const Language = () => {
           el nombre de la columna debe seguir la nomenclatura Camel Case.
         </Paragraph>
 
-        <Title4 title="Estructura de una Columna" />
+        <Title3 title="Estructura de una Columna" />
         <Paragraph>
           Una columna sigue la siguiente estructura:
           &lt;Decorador&gt;&lt;TipoDato&gt;&lt;Identificador&gt;. <br />
@@ -44,7 +42,7 @@ const Language = () => {
           />
         </Paragraph>
 
-        <Title4 title="Estructura de un decorador" />
+        <Title3 title="Estructura de un decorador" />
         <Paragraph>
           Un decorador sigue la siguiente estructura:
           &lt;@NombreDecorador&gt;(&lt;Valor&gt;). <br />
@@ -57,7 +55,7 @@ const Language = () => {
           />
         </Paragraph>
 
-        <Title4 title="Decoradores y su Relación con el Tipo de Dato" />
+        <Title3 title="Decoradores y su Relación con el Tipo de Dato" />
         <table className="text-left">
           <thead>
             <tr>
