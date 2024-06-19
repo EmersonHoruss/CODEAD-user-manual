@@ -1,1 +1,1 @@
-export const titleHeader = "CODEAD Manual";
+export const titleHeader = "CODEAD Docs";
