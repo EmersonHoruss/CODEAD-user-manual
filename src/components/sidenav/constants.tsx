@@ -34,7 +34,7 @@ export const optionsWithIcons: { [x: string]: IOptionWithIcon } = {
     icon: <GridOnOutlinedIcon />,
   },
   language: {
-    title: "Lenguaje",
+    title: "CODEAD Language",
     path: "lenguaje",
     icon: <TranslateOutlinedIcon />,
   },
