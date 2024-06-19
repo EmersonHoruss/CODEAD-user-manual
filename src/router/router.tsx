@@ -22,11 +22,10 @@ const router = createBrowserRouter([
         path: options.manual.path,
         element: <Manual />,
       },
-
-      {
-        path: `${options.examples.path}`,
-        element: <Examples />,
-      },
+      // {
+      //   path: `${options.examples.path}`,
+      //   element: <Examples />,
+      // },
       {
         path: options.language.path,
         element: <Language />,

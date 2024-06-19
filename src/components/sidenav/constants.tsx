@@ -14,7 +14,7 @@ export const options: { [x: string]: IOption } = {
     title: "Manual",
     path: "manual",
   },
-  examples: { title: "Ejemplos", path: "ejemplos" },
+  // examples: { title: "Ejemplos", path: "ejemplos" },
   language: { title: "Lenguaje", path: "lenguaje" },
   specificationModule: {
     title: "Módulo de Especificación",
@@ -28,11 +28,11 @@ export const optionsWithIcons: { [x: string]: IOptionWithIcon } = {
     path: "manual",
     icon: <ArticleOutlinedIcon />,
   },
-  examples: {
-    title: "Ejemplos",
-    path: "ejemplos",
-    icon: <GridOnOutlinedIcon />,
-  },
+  // examples: {
+  //   title: "Ejemplos",
+  //   path: "ejemplos",
+  //   icon: <GridOnOutlinedIcon />,
+  // },
   language: {
     title: "CODEAD Language",
     path: "lenguaje",
