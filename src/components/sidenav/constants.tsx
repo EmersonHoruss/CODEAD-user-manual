@@ -1,7 +1,6 @@
 import { IOption } from "./IOption";
 import { IOptionWithIcon } from "./IOptionWithIcon";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import GridOnOutlinedIcon from "@mui/icons-material/GridOnOutlined";
 import TranslateOutlinedIcon from "@mui/icons-material/TranslateOutlined";
 import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
