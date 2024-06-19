@@ -42,7 +42,7 @@ const Language = () => {
           />
         </Paragraph>
 
-        <Title3 title="Estructura de un decorador" />
+        <Title3 title="Estructura de un Decorador" />
         <Paragraph>
           Un decorador sigue la siguiente estructura:
           &lt;@NombreDecorador&gt;(&lt;Valor&gt;). <br />
