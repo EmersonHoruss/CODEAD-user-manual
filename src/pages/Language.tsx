@@ -50,7 +50,7 @@ const Language = () => {
             introduction="Ejemplos: "
             list={[
               { key: "Decorador con valor", content: "@Min(0)" },
-              { key: "Decorador sin valor", content: "@Min o @Min()" },
+              { key: "Decorador sin valor", content: "@Min" },
             ]}
           />
         </Paragraph>
@@ -78,7 +78,7 @@ const Language = () => {
                 Con valor: true o false. Ejemplo: @Nullable(true) o
                 @Nullable(false)
                 <br />
-                Sin valor: por defecto es true. Ejemplo: @Nullable() o @Nullable
+                Sin valor: por defecto es true. Ejemplo: @Nullable
               </td>
               <td>
                 Con el valor true usa @NotNull <br />
@@ -99,7 +99,7 @@ const Language = () => {
               <td>
                 Con valor: true o false. Ejemplo @Unique(true) o @Unique(false){" "}
                 <br />
-                Sin valor: por defecto es true. Ejemplo: @Unique() o @Unique{" "}
+                Sin valor: por defecto es true. Ejemplo: @Unique{" "}
                 <br /> Tip: Cuando el valor es falso este decorador será
                 ignorado, porque no es necesario codificarlo para generar el
                 backend. Por temas de usabilidad se ha considerado el valor true
@@ -122,7 +122,7 @@ const Language = () => {
                 Con valor: Future, FutureOrNow, Past y PastOrNow. Ejemplo:
                 @Time(Future)
                 <br />
-                Sin valor: por defecto es FutureOrNow. Ejemplo: @Time() o @Time
+                Sin valor: por defecto es FutureOrNow. Ejemplo: @Time
               </td>
               <td>
                 Con el valor Future usa @Future
@@ -143,7 +143,7 @@ const Language = () => {
                 Con valor: cualquier entero, si es un negativo CODEAD convierte
                 a positivo automáticamente. Ejemplo: @Min(10) o @Min(-10)
                 <br />
-                Sin valor: por defecto es 0. Ejemplo: @Min() o @Min
+                Sin valor: por defecto es 0. Ejemplo: @Min
               </td>
               <td>Con el valor numérico usa @Size(min = número)</td>
               <td>No</td>
@@ -153,7 +153,7 @@ const Language = () => {
               <td>
                 Con valor: cualquier entero. Ejemplo: @Min(10) o @Min(-10)
                 <br />
-                Sin valor: por defecto es 0. Ejemplo: @Min() o @Min
+                Sin valor: por defecto es 0. Ejemplo: @Min
               </td>
               <td>Con el valor numérico usa @Min(número)</td>
               <td>No</td>
@@ -168,7 +168,7 @@ const Language = () => {
                 Con valor: cualquier entero, si es un negativo CODEAD convierte
                 a positivo automáticamente. Ejemplo: @Max(10) o @Max(-10)
                 <br />
-                Sin valor: por defecto es 255. Ejemplo: @Max() o @Max
+                Sin valor: por defecto es 255. Ejemplo: @Max
               </td>
               <td>Con el valor numérico usa @Size(max = número)</td>
               <td>Con el valor numérico usa @Column(length = número)</td>
@@ -178,7 +178,7 @@ const Language = () => {
               <td>
                 Con valor: cualquier entero. Ejemplo: @Max(10) o @Max(-10){" "}
                 <br />
-                Sin valor: por defecto es 0. Ejempo: @Max() o @Max
+                Sin valor: por defecto es 0. Ejempo: @Max
               </td>
               <td>Con el valor numérico usa @Max(número)</td>
               <td>No</td>
@@ -192,7 +192,7 @@ const Language = () => {
               <td>
                 Con valor: true o false. Ejemplo: @NotBlank(true) o
                 @NotBlank(false) <br />
-                Sin valor: por defecto es true. Ejemplo: @NotBlank() o @NotBlank
+                Sin valor: por defecto es true. Ejemplo: @NotBlank
                 <br /> Tip: Cuando el valor es falso este decorador será
                 ignorado, porque no es necesario codificarlo para generar el
                 backend. Por temas de usabilidad se ha considerado el valor true
@@ -217,7 +217,7 @@ const Language = () => {
                 Con valor: cualquier entero, si es un negativo CODEAD convierte
                 a positivo automáticamente. Ejemplo: @Integer(10) o
                 @Integer(-10) <br />
-                Sin valor: por defecto es 4. Ejemplo: @Integer() o @Integer
+                Sin valor: por defecto es 4. Ejemplo: @Integer
               </td>
               <td>Con el valor numérico usa @Digits(integer = número)</td>
               <td>
@@ -234,7 +234,7 @@ const Language = () => {
                 Con valor: cualquier entero, si es un negativo CODEAD convierte
                 a positivo automáticamente. Ejemplo: @Decimal(10) o
                 @Decimal(-10) <br />
-                Sin valor: por defecto es 2. Ejemplo: @Decimal() o @Decimal
+                Sin valor: por defecto es 2. Ejemplo: @Decimal
               </td>
               <td>Con el valor numérico usa @Decimal(fraction = número)</td>
               <td>Con el valor numérico usa @Column(fraction = número)</td>
