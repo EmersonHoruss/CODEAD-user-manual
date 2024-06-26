@@ -55,16 +55,105 @@ const Language = () => {
           />
         </Paragraph>
 
+        <Title3 title="Tipos de Datos" />
+        <Paragraph>
+          <table className="text-left">
+            <thead>
+              <tr>
+                <th className="pb-2">#</th>
+                <th className="pb-2">Nombre</th>
+                <th className="pb-2">Descripción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>byte</td>
+                <td>
+                  Tipo de dato numérico con una longitud de 1 byte y con valores
+                  desde -128 hasta 128.
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>short</td>
+                <td>
+                  Tipo de dato numérico con una longitud de 2 bytes y con
+                  valores desde -32,678 hasta 32,677.
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>int</td>
+                <td>
+                  Tipo de dato numérico con una longitud de 4 bytes y con
+                  valores desde -2,147,483,648 hasta 2,147,483,647.
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>long</td>
+                <td>
+                  Tipo de dato numérico con una longitud de 8 bytes y con
+                  valores desde -9,223,372,036,854,775,808 hasta
+                  9,223,372,036,854,775,807.
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>float</td>
+                <td>
+                  Tipo de dato numérico con punto flotante con una longitud de 4
+                  bytes y con valores desde 1.4e-045 hasta 3.4e+038.
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>double</td>
+                <td>
+                  Tipo de dato numérico con punto flotante con una longitud de 8
+                  bytes y con valores desde 4.9e-324 hasta 1.8e+308.
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>boolean</td>
+                <td>Tipo de dato booleano con valores: true o false.</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>String</td>
+                <td>Tipo de dato texto o cadena de caracteres.</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>LocalDate</td>
+                <td>Tipo de dato fecha.</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Relation</td>
+                <td>
+                  Tipo de dato que representa cualquier relación, la notación
+                  para entender que es una relación sigue la nomenclatura Pascal
+                  Case. Por ejemplo: Estudiante, Profesor, Compra, Venta, etc.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </Paragraph>
+
         <Title3 title="Decoradores y su Relación con el Tipo de Dato" />
         <table className="text-left">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Nombre</th>
-              <th>Tipo de Dato</th>
-              <th>Valores</th>
-              <th>Mapeo a Nivel de DTO</th>
-              <th>Mapeo a Nivel de Base de Datos</th>
+              <th className="pb-2">#</th>
+              <th className="pb-2">Nombre</th>
+              <th className="pb-2">Tipo de Dato</th>
+              <th className="pb-2">Valores</th>
+              <th className="pb-2">Mapeo a Nivel de DTO</th>
+              <th className="pb-2">Mapeo a Nivel de Base de Datos</th>
             </tr>
           </thead>
 
@@ -99,11 +188,11 @@ const Language = () => {
               <td>
                 Con valor: true o false. Ejemplo @Unique(true) o @Unique(false){" "}
                 <br />
-                Sin valor: por defecto es true. Ejemplo: @Unique{" "}
-                <br /> Tip: Cuando el valor es falso este decorador será
-                ignorado, porque no es necesario codificarlo para generar el
-                backend. Por temas de usabilidad se ha considerado el valor true
-                y false así como el @Nullable
+                Sin valor: por defecto es true. Ejemplo: @Unique <br /> Tip:
+                Cuando el valor es falso este decorador será ignorado, porque no
+                es necesario codificarlo para generar el backend. Por temas de
+                usabilidad se ha considerado el valor true y false así como el
+                @Nullable
               </td>
               <td>No</td>
               <td>
