@@ -309,9 +309,7 @@ const Language = () => {
                 Sin valor: por defecto es 4. Ejemplo: @Integer
               </td>
               <td>Con el valor numérico usa @Digits(integer = número)</td>
-              <td>
-                Con el valor numérico usa @Column(precision = número + fraction)
-              </td>
+              <td>No</td>
             </tr>
 
             {/* @Decimal */}
@@ -326,7 +324,7 @@ const Language = () => {
                 Sin valor: por defecto es 2. Ejemplo: @Decimal
               </td>
               <td>Con el valor numérico usa @Decimal(fraction = número)</td>
-              <td>Con el valor numérico usa @Column(fraction = número)</td>
+              <td>No</td>
             </tr>
           </tbody>
         </table>
